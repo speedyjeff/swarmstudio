@@ -48,17 +48,18 @@
                             <ScaleTransform ScaleX="0.65" ScaleY="0.65"/>
                         </Grid.RenderTransform>
                         <Rectangle Fill="White" Stroke="Red" StrokeThickness="5" RadiusX="5" RadiusY="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <StackPanel Orientation="Vertical">
-                        <Button Foreground="Black" Click="Close_Tapped" Height="35">Close</Button>
-                        <local:LogicSelector x:Name="DebugMatrix" Height="188" Width="188" IsHitTestVisible="false"/>
-                        <Grid Height="10" IsHitTestVisible="false"/>
-                        <local:LogicSelector x:Name="DebugGrid" Height="188" Width="188" IsHitTestVisible="false"/>
-                        <Grid Height="10" IsHitTestVisible="false"/>
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" IsHitTestVisible="false">
-                            <TextBlock Text="Previous move:" Foreground="Black" FontSize="20" />
-                            <TextBlock x:Name="DebugPrevious" Foreground="Black" FontSize="20" Text="Duplication"/>
+                        <Button Foreground="Black" Click="Close_Tapped" VerticalAlignment="Top" Width="20" Height="20" HorizontalAlignment="Left">X</Button>
+                        <StackPanel Orientation="Vertical">
+                            <Grid Height="25"/>
+                            <local:LogicSelector x:Name="DebugMatrix" Height="188" Width="188" IsHitTestVisible="false"/>
+                            <Grid Height="10" IsHitTestVisible="false"/>
+                            <local:LogicSelector x:Name="DebugGrid" Height="188" Width="188" IsHitTestVisible="false"/>
+                            <Grid Height="10" IsHitTestVisible="false"/>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" IsHitTestVisible="false">
+                                <TextBlock Text="Previous move:" Foreground="Black" FontSize="20" />
+                                <TextBlock x:Name="DebugPrevious" Foreground="Black" FontSize="20" Text="Duplication"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
                     </Grid>
                 </Grid>
                 
