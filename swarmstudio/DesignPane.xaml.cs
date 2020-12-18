@@ -32,27 +32,12 @@ namespace swarmstudio
 
         private bool VerResizeUp;
 
-        public DesignPane(LevelID id, PlotColor mycolor, bool isbattle = false, List<ScriptOverride> scripts = null)
+        public static DesignPane CachedDesignPane;
+
+        public DesignPane()
         {
             this.InitializeComponent();
 
-            MyLevelID = id;
-            MyColor = mycolor;
-            IsBattle = isbattle;
-            MyScripts = scripts;
-
-            // populate the submit and rate screen
-            if (MyScripts != null)
-            {
-                foreach (var so in MyScripts)
-                {
-                    if (!so.IsUser) DoneScreen.AddScript(so.Name, so.Id);
-                }
-            }
-
-            VerResizeUp = false;
-            DebugPaneIsPressed = false;
-            IsSingleStep = false;
             Loaded += WhenLoaded;
 
             Execution.OnGetScript += Execution_GetScript;
@@ -71,6 +56,28 @@ namespace swarmstudio
             TutorialPane.OnDisplayMove += TutorialPane_OnDisplayMove;
             TutorialPane.OnDisplayContext += TutorialPane_OnDisplayContext;
             TutorialPane.OnDisplayDebugInfo += TutorialPane_OnDisplayDebugInfo;
+        }
+
+        public void Initialize(LevelID id, PlotColor mycolor, bool isbattle = false, List<ScriptOverride> scripts = null)
+        {
+            MyLevelID = id;
+            MyColor = mycolor;
+            IsBattle = isbattle;
+            MyScripts = scripts;
+
+            VerResizeUp = false;
+            DebugPaneIsPressed = false;
+            IsSingleStep = false;
+
+            // populate the submit and rate screen
+            DoneScreen.ClearScripts();
+            if (MyScripts != null)
+            {
+                foreach (var so in MyScripts)
+                {
+                    if (!so.IsUser) DoneScreen.AddScript(so.Name, so.Id);
+                }
+            }
         }
 
         private void WhenLoaded(object sender, RoutedEventArgs e)

@@ -21,6 +21,11 @@ namespace swarmstudio
     /// </summary>
     public partial class MainWindow : Window
     {
+        static MainWindow()
+        {
+            DesignPane.CachedDesignPane = new DesignPane();
+        }
+
         public MainWindow()
         {
             this.InitializeComponent();

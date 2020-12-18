@@ -117,7 +117,8 @@ namespace swarmstudio
             //LoadingStoryboard.Begin();
             NextWorldID = id;
             // go
-            this.NavigationService.Navigate(new DesignPane(id, color, isbattle, overrides));
+            DesignPane.CachedDesignPane.Initialize(id, color, isbattle, overrides);
+            this.NavigationService.Navigate(DesignPane.CachedDesignPane);
         }
 
         private void ShowBattleSelctor(LevelID level)

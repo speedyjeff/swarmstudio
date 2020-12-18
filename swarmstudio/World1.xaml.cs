@@ -116,7 +116,8 @@ namespace swarmstudio
             NextWorldID = id;
 
             // go
-            this.NavigationService.Navigate(new DesignPane(NextWorldID, PlotColor.Blue));
+            DesignPane.CachedDesignPane.Initialize(NextWorldID, PlotColor.Blue);
+            this.NavigationService.Navigate(DesignPane.CachedDesignPane);
         }
 
         private void ParseName(string name, out int id)

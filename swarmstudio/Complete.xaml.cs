@@ -33,7 +33,7 @@ namespace swarmstudio
         {
             this.InitializeComponent();
 
-            Rated = new bool[3] { true, true, true };
+            ClearScripts();
         }
 
         //
@@ -65,6 +65,15 @@ namespace swarmstudio
                 if (ScriptPanel_3.Visibility == Visibility.Visible) count++;
                 return count;
             }
+        }
+
+        public void ClearScripts()
+        {
+            ScriptPanel_1.Visibility = Visibility.Collapsed;
+            ScriptPanel_2.Visibility = Visibility.Collapsed;
+            ScriptPanel_3.Visibility = Visibility.Collapsed;
+
+            Rated = new bool[3] { true, true, true };
         }
 
         public void AddScript(string name, int id)
