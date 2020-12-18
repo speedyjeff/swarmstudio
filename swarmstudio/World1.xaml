@@ -1,0 +1,188 @@
+﻿<Page x:Class="swarmstudio.World1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:swarmstudio"
+      mc:Ignorable="d" 
+      Title="World1">
+
+    <Viewbox>
+        <Grid Background="White" Width="1366" Height="768" x:Name="MainGrid" IsHitTestVisible="True">
+            <Button Foreground="Black" Click="Back_Tapped" Width="65" Height="65" HorizontalAlignment="Left" VerticalAlignment="Top">Back</Button>
+            <Image Source="Assets/screen1.png" Opacity="0.45"/>
+            <TextBlock Text="World One" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="75"/>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="45"/>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" x:Name="Level_1">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="1" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_1" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_2">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="2" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_2" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_3">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="3" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_3" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_4">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="4" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_4" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                </StackPanel>
+                <Grid Height="75"/>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_5">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="5" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_5" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_6">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="6" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_6" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_7">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="7" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_7" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_8">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="8" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_8" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                </StackPanel>
+                <Grid Height="75"/>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_9">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="9" Foreground="Orange" FontSize="60" Margin="32,4,-32,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_9" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_10">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="10" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_10" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_11">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="11" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_11" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_12">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="12" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_12" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                </StackPanel>
+                <Grid Height="75"/>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_13">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="13" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_13" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_14">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="14" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_14" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_15">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="15" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_15" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                    <Grid Width="50" />
+                    <Grid Width="100" Height="100" MouseDown="Level_Tapped" Opacity=".75" x:Name="Level_16">
+                        <Rectangle Fill="OliveDrab" RadiusX="10" RadiusY="10" Stroke="Orange" StrokeThickness="4"/>
+                        <TextBlock Text="16" Foreground="Orange" FontSize="60" Margin="16,4,-16,-4" IsHitTestVisible="False"/>
+                        <local:Stars x:Name="Stars_16" Width="225" Height="75" VerticalAlignment="Bottom" Margin="10,0,-135,-40" IsHitTestVisible="False">
+                            <local:Stars.RenderTransform>
+                                <ScaleTransform ScaleX="0.35" ScaleY="0.35"/>
+                            </local:Stars.RenderTransform>
+                        </local:Stars>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Page>

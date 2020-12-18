@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="swarmstudio.Complete"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1066">
+    
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+        <Rectangle VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stroke="Blue" StrokeThickness="5" Fill="White" RadiusX="5" RadiusY="5" />
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid Height="10" />
+            <local:Stars x:Name="StarPanel" />
+            <StackPanel Orientation="Horizontal" Background="White">
+                <Button Click="Menu_Tapped">Home</Button>
+                <Button Click="Replay_Tapped">Redo</Button>
+                <Button x:Name="NextButton" Click="Next_Tapped" Visibility="Visible">Next</Button>
+            </StackPanel>
+            <Grid HorizontalAlignment="Right">
+                <TextBlock x:Name="RatingText" Foreground="Black" FontSize="10" Width="50" TextAlignment="Left"/>
+            </Grid>
+            <Grid x:Name="ScriptUpload" Visibility="Collapsed">
+                <Rectangle Stroke="Black" StrokeThickness="2" RadiusX="5" RadiusY="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                <StackPanel Orientation="Horizontal">
+                    <Grid Width="5"/>
+
+                    <StackPanel Orientation="Vertical">
+                        <Grid Height="2" />
+                        <TextBlock Text="Rate content:" Foreground="Black" FontSize="20"/>
+                        <StackPanel Orientation="Horizontal" x:Name="ScriptSubmitter">
+                            <TextBlock x:Name="Name_Part1" Text="The" Foreground="Black" FontSize="20" VerticalAlignment="Center"/>
+                            <Grid Width="5"/>
+                            <ComboBox x:Name="Name_Part2" AllowDrop="True" Width="100" VerticalAlignment="Center">
+                                <ComboBoxItem Content="Red"/>
+                                <ComboBoxItem Content="Blue"/>
+                                <ComboBoxItem Content="Green"/>
+                                <ComboBoxItem Content="Yellow" IsSelected="true"/>
+                                <ComboBoxItem Content="Sly"/>
+                                <ComboBoxItem Content="Clever"/>
+                                <ComboBoxItem Content="Strong"/>
+                                <ComboBoxItem Content="Fast"/>
+                                <ComboBoxItem Content="Eternal"/>
+                                <ComboBoxItem Content="Silver"/>
+                            </ComboBox>
+                            <Grid Width="5"/>
+                            <ComboBox x:Name="Name_Part3" AllowDrop="True" Width="100" VerticalAlignment="Center">
+                                <ComboBoxItem Content="Lightning" IsSelected="true"/>
+                                <ComboBoxItem Content="Dragon"/>
+                                <ComboBoxItem Content="Striker"/>
+                                <ComboBoxItem Content="Stealth"/>
+                                <ComboBoxItem Content="Maker"/>
+                                <ComboBoxItem Content="Eater"/>
+                                <ComboBoxItem Content="Giant"/>
+                                <ComboBoxItem Content="Machine"/>
+                                <ComboBoxItem Content="Snake"/>
+                                <ComboBoxItem Content="Monkey"/>
+                            </ComboBox>
+                            <Grid Width="10"/>
+                            <Button x:Name="UploadButton" Width="70" Click="Submit_Tapped">Upload</Button>
+                        </StackPanel>
+                        <StackPanel x:Name="ScriptPanel_1" Orientation="Horizontal" Height="50" Visibility="Collapsed">
+                            <TextBlock x:Name="Script_1_Name" Text="The yellow dragon" FontSize="20" Width="180" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="Script_1_Id" Text="0" Visibility="Collapsed" />
+                            <Button x:Name="Script_1_Like" Content="Like" Height="70" Width="70" Click="Like_1_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                            <Button x:Name="Script_1_Dislike" Content="Dislike" Height="70" Width="70" Click="Dislike_1_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel x:Name="ScriptPanel_2" Orientation="Horizontal" Height="50" Visibility="Collapsed">
+                            <TextBlock x:Name="Script_2_Name" Text="The yellow dragon" FontSize="20" Width="180" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="Script_2_Id" Text="0" Visibility="Collapsed" />
+                            <Button x:Name="Script_2_Like" Content="Like" Height="70" Width="70" Click="Like_2_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                            <Button x:Name="Script_2_Dislike" Content="Dislike" Height="70" Width="70" Click="Dislike_2_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel x:Name="ScriptPanel_3" Orientation="Horizontal" Height="50" Visibility="Collapsed">
+                            <TextBlock x:Name="Script_3_Name" Text="The yellow dragon" FontSize="20" Width="180" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="Script_3_Id" Text="0" Visibility="Collapsed" />
+                            <Button x:Name="Script_3_Like" Content="Like" Height="70" Width="70" Click="Like_3_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                            <Button x:Name="Script_3_Dislike" Content="Dislike" Height="70" Width="70" Click="Dislike_3_Tapped">
+                                <Button.RenderTransform>
+                                    <ScaleTransform ScaleX=".75" ScaleY=".75" />
+                                </Button.RenderTransform>
+                            </Button>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <Grid Width="5"/>
+                </StackPanel>
+            </Grid>
+            <Grid Height="10"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

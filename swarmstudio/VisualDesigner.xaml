@@ -1,0 +1,369 @@
+﻿<UserControl x:Class="swarmstudio.VisualDesigner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="1890" d:DesignWidth="1380">
+
+    <StackPanel Orientation="Vertical">
+        <Grid Height="5" />
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle x:Name="IdentityRectangle"  Fill="White" Stroke="Black" StrokeThickness="5" />
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <TextBlock Text="X" Foreground="Black" MouseDown="DeleteAll_Tapped" FontSize="40"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_0x1" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="1" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_0x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x0" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x0" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_0x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x1" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x1" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_0x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x2" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x2" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_0x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x3" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x3" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_0x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_0x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_1x0" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_1x2" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="2" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_1x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x0" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x0" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_1x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x1" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x1" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_1x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x2" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x2" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_1x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x3" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x3" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_1x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_2x1" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_2x3" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="3" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_2x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x0" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x0" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_2x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x1" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x1" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_2x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x2" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x2" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_2x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x3" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x3" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_2x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_3x2" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_3x4" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="4" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_3x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x0" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x0" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_3x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x1" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x1" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_3x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x2" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x2" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_3x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x3" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x3" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_3x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_4x3" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_4x5" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="5" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_4x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x0" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x0" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_4x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x1" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x1" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_4x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x2" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x2" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_4x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x3" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x3" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_4x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_5x4" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_5x6" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="6" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_5x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x0" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x0" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_5x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x1" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x1" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_5x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x2" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x2" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_5x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x3" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x3" Visibility="Visible" /> 
+            </Grid>
+            <Grid x:Name="Grid_5x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x4" />
+                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x4" Visibility="Visible" /> 
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_6x5" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_6x7" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="7" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_6x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x0" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x0" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_6x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x1" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x1" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_6x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x2" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x2" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_6x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x3" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x3" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_6x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x4" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x4" Visibility="Visible" />
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_7x6" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_7x8" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="8" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_7x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x0" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x0" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_7x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x1" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x1" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_7x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x2" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x2" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_7x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x3" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x3" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_7x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x4" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x4" Visibility="Visible" />
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_8x7" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Image Source="Assets/DOWN.png" Height="25" x:Name="Down_8x9" MouseDown="Down_Tapped"/>
+                    <Grid Height="10" />
+                </StackPanel>
+                <TextBlock Text="9" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_8x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x0" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x0" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_8x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x1" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x1" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_8x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x2" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x2" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_8x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x3" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x3" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_8x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x4" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x4" Visibility="Visible" />
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="5" />
+            <Grid Width="50" Height="188">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="5"></Rectangle>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid Height="10" />
+                    <Image Source="Assets/UP.png" Height="25" x:Name="Up_9x8" MouseDown="Up_Tapped"/>
+                </StackPanel>
+                <TextBlock Text="10" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" />
+            </Grid>
+            <Grid x:Name="Grid_9x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x0" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x0" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_9x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x1" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x1" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_9x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x2" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x2" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_9x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x3" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x3" Visibility="Visible" />
+            </Grid>
+            <Grid x:Name="Grid_9x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped" >
+                <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x4" />
+                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x4" Visibility="Visible" />
+            </Grid>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,78 @@
+﻿<Page x:Class="swarmstudio.DesignPane"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:swarmstudio"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="DesignPane">
+
+    <Viewbox>
+        <Grid Width="1366" Height="768" x:Name="MainGrid">
+            <Grid Background="White">
+                <StackPanel Orientation="Vertical">
+                    <ScrollViewer x:Name="ExecutionPane" Width="1041" Height="384" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+
+                        <local:Surface x:Name="Execution" Width="1500" Height="1500" Visibility="Visible" HorizontalAlignment="Left"/>
+
+                    </ScrollViewer>
+                    <Grid x:Name="VerResizeBar" Background="Black" Width="1066" Height="25" HorizontalAlignment="Left">
+                        <Rectangle Fill="White" Height="22" Width="80" MouseDown="Ver_Resize_Tapped"/>
+                    </Grid>
+                    <ScrollViewer x:Name="DesignerPane" Width="1366" Height="384" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" MouseMove="DesignerPane_PointerMoved" MouseDown="DesignerPane_PointerPressed">
+                        <local:VisualDesigner x:Name="VisualDesigner" Width="1380" Height="1920" Visibility="Visible" HorizontalAlignment="Left" />
+                    </ScrollViewer>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Grid Background="Black" Width="25">
+                        <Rectangle Fill="White" Height="80" Width="22" MouseDown="Hor_Resize_Tapped"/>
+                    </Grid>
+                    <local:Help x:Name="HelpPane" Width="300" Height="768" Visibility="Visible"/>
+                </StackPanel>
+                
+                <StackPanel x:Name="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" Background="White">
+                    <Button Foreground="Black" Click="Back_Tapped" Height="65">Back</Button>
+                    <Button Foreground="Black" Click="Reset_Tapped" Height="65">Reset</Button>
+                    <Button Foreground="Black" Click="Run_Tapped" Height="65">Go</Button>
+                    <Button Foreground="Black" Click="Single_Tapped" Height="65">One Step</Button>
+                </StackPanel>
+                <Grid x:Name="DebugPane" Visibility="Collapsed" Background="Transparent" Width="175" Height="385" MouseDown="DebugPane_Pressed" MouseUp="DebugPane_Released" MouseMove="DebugPane_Moved" Margin="861,10,330,348">
+                    <Grid.RenderTransform>
+                        <TranslateTransform X="0" Y="0" />
+                    </Grid.RenderTransform>
+                    <Rectangle Fill="White" Stroke="Red" StrokeThickness="5" RadiusX="5" RadiusY="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <StackPanel Orientation="Vertical">
+                        <Button Foreground="Black" Click="Close_Tapped" Height="35">Close</Button>
+                        <local:LogicSelector x:Name="DebugMatrix" Height="125" Width="125" IsHitTestVisible="false"/>
+                        <Grid Height="10" IsHitTestVisible="false"/>
+                        <local:LogicSelector x:Name="DebugGrid" Height="125" Width="125" IsHitTestVisible="false"/>
+                        <Grid Height="10" IsHitTestVisible="false"/>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" IsHitTestVisible="false">
+                            <TextBlock Text="Previous move:" Foreground="Black" FontSize="20" />
+                            <TextBlock x:Name="DebugPrevious" Foreground="Black" FontSize="20" Text="Duplication"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid x:Name="DonePane" Visibility="Collapsed" Background="#99FFFFFF" Width="1066" Height="768" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <local:Complete x:Name="DoneScreen" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+                <Grid x:Name="ErrorPane" Visibility="Collapsed" Background="#99FFFFFF" Width="1066" Height="768" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Grid Width="500" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Wheat">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="An error occured while trying to execute" Foreground="Black" FontSize="25"/>
+                            <TextBlock Text="your SWARM logic.  Please make updates" Foreground="Black" FontSize="25"/>
+                            <TextBlock Text="and try again." Foreground="Black" FontSize="25"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Hint: " Foreground="White" FontSize="20" />
+                                <TextBlock x:Name="ErrorHint" Text="" Foreground="White" FontSize="20" FontFamily="Global User Interface" />
+                            </StackPanel>
+                            <Button Foreground="Black" Click="Reset_Tapped" HorizontalAlignment="Center">Redo</Button>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <local:Tutorial x:Name="TutorialPane" Visibility="Collapsed"/>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Page>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="swarmstudio.ExpandChooser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Grid>
+        <Rectangle x:Name="BorderRectangle" Stroke="Blue" Fill="White" StrokeThickness="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RadiusX="5" RadiusY="5"/>
+        <StackPanel Orientation="Vertical">
+            <Grid Height="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Grid Width="10"/>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="TitleText" Text="TEXT" Foreground="Black" FontSize="30"/>
+                    <StackPanel Orientation="Vertical" Width="180" Background="LightGray">
+                        <RadioButton x:Name="Radio_Create" Content="Create script" Foreground="Black" FontSize="20" Checked="Radio_Checked" Click="Radio_Tapped"/>
+                        <RadioButton x:Name="Radio_Computer" Content="Computer script" Foreground="Black"  FontSize="20" Checked="Radio_Checked" Click="Radio_Tapped"/>
+                        <RadioButton x:Name="Radio_Disabled" Content="Disabled" Foreground="Black"  FontSize="20" Checked="Radio_Checked" Click="Radio_Tapped"/>
+                        <RadioButton x:Name="Radio_Choose" Content="Choose script" Foreground="Black"  FontSize="20" Checked="Radio_Checked" Click="Radio_Tapped" IsEnabled="false"/>
+                    </StackPanel>
+                    <Grid Height="5"/>
+                    <TextBlock x:Name="DefaultText" Text="Design your own" Foreground="Black" FontSize="20" Width="180" VerticalAlignment="Top" Visibility="Visible"/>
+                    <TextBlock x:Name="ComputerText" Text="Computer" Foreground="Black" FontSize="20" Width="180" VerticalAlignment="Top" Visibility="Collapsed"/>
+                    <TextBlock x:Name="ChoiceText" Text="" Foreground="Black" FontSize="20" Width="180" VerticalAlignment="Top" Visibility="Collapsed"/>
+                    <TextBlock x:Name="DisabledText" Text="Disabled" Foreground="Black" FontSize="20" Width="180" VerticalAlignment="Top" Visibility="Collapsed"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

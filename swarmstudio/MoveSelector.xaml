@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="swarmstudio.MoveSelector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="105" d:DesignWidth="110">
+
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" MouseDown="Grid_Tapped">
+        <StackPanel Orientation="Vertical">
+            <Image x:Name="DEFEND_Img" Source="Assets/DEFEND.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="LEFT_Img" Source="Assets/LEFT.png" Width="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="DUPLICATE_Img" Source="Assets/DUPLICATE.png" Height="40" MouseDown="Image_Tapped"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image x:Name="UP_Img" Source="Assets/UP.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image Height="25"/>
+            <Image x:Name="DOWN_Img" Source="Assets/DOWN.png" Height="40" MouseDown="Image_Tapped"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image x:Name="EXPLODE_Img" Source="Assets/EXPLODE.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="RIGHT_Img" Source="Assets/RIGHT.png" Width="40" MouseDown="Image_Tapped"/>
+            <Image />
+        </StackPanel>
+        <Grid Width="8" />
+        <Grid Visibility="hidden">
+            <Image x:Name="UP_Selected_Img" Source="Assets/UP-selected.png" />
+            <Image x:Name="RIGHT_Selected_Img" Source="Assets/RIGHT-selected.png" />
+            <Image x:Name="LEFT_Selected_Img" Source="Assets/LEFT-selected.png" />
+            <Image x:Name="EXPLODE_Selected_Img" Source="Assets/EXPLODE-selected.png" />
+            <Image x:Name="DUPLICATE_Selected_Img" Source="Assets/DUPLICATE-selected.png" />
+            <Image x:Name="DOWN_Selected_Img" Source="Assets/DOWN-selected.png" />
+            <Image x:Name="DEFEND_Selected_Img" Source="Assets/DEFEND-selected.png" />
+        </Grid>
+    </StackPanel>
+</UserControl>

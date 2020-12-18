@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="swarmstudio.ScriptViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="780">
+    
+    <StackPanel Orientation="Vertical">
+        <Grid Height="300">
+            <Rectangle x:Name="Backdrop" Fill="White" Stroke="Black" StrokeThickness="5" RadiusX="5" RadiusY="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <ScrollViewer x:Name="ItemScroller" Height="230" Width="780" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <local:ScriptItem x:Name="Item0" MouseDown="Item0_Tapped"/>
+                    <local:ScriptItem x:Name="Item1"  MouseDown="Item1_Tapped"/>
+                    <local:ScriptItem x:Name="Item2"  MouseDown="Item2_Tapped"/>
+                    <local:ScriptItem x:Name="Item3"  MouseDown="Item3_Tapped"/>
+                    <local:ScriptItem x:Name="Item4"  MouseDown="Item4_Tapped"/>
+                    <local:ScriptItem x:Name="Item5" MouseDown="Item5_Tapped"/>
+                    <local:ScriptItem x:Name="Item6" MouseDown="Item6_Tapped"/>
+                    <local:ScriptItem x:Name="Item7" MouseDown="Item7_Tapped"/>
+                    <local:ScriptItem x:Name="Item8" MouseDown="Item8_Tapped"/>
+                    <local:ScriptItem x:Name="Item9" MouseDown="Item9_Tapped"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="65" Click="Back_Tapped">Back</Button>
+            <Button Height="65" Click="Forward_Tapped">Ahead</Button>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

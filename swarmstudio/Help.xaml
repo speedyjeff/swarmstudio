@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="swarmstudio.Help"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="275">
+
+    <StackPanel Background="White">
+        <ComboBox Height="25" VerticalAlignment="Top" HorizontalAlignment="Stretch" AllowDrop="True" SelectionChanged="ComboBox_SelectionChanged" x:Name="Help_Chooser">
+            <ComboBoxItem Content="Game Play" IsSelected="True"/>
+            <ComboBoxItem Content="Scoring" />
+            <ComboBoxItem Content="Battle" />
+            <ComboBoxItem Content="Hints" />
+        </ComboBox>
+        <ScrollViewer Height="718" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+            <Grid>
+                <StackPanel x:Name="GamePlay_Panel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Vertical" Visibility="Visible">
+                    <TextBlock Text="The goal is to get your swarm safely from the Start to Finish (if you get stuck try Hints)" FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/StartNFinish.png" HorizontalAlignment="Center" Width="250"/>
+                    <TextBlock Text="Build a plan to move your swarm by using move instructions - at times these moves must be done conditionally based on context.  The context consists a narrow or wide view (from the swarms point of view), previous move or random." FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="Assets/MoveSelection.png" Width="125" VerticalAlignment="Center"/>
+                        <Image Source="Assets/Selection.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="130"/>
+                    </StackPanel>
+                    <TextBlock Text="Each swarm, each turn will make this move:" FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/MoveMap.png" Width="275"/>
+                    <TextBlock Text="Make moves based on what the swarm can see (field view does not have 'enemy' use 'occupied'):" FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/Spaces.png" HorizontalAlignment="Center" Width="250" />
+                    <TextBlock Text="When you are ready to try your swarm plan, press play:" FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/Controls.png" HorizontalAlignment="Center" />
+                    <TextBlock Text="To aid in building your plan, click on the playing field.  Use this real-time debugging formation in conjunction with the single step functionality to understand what your swarm sees." FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/Debug.png" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Important note when using context - field view, wide field view, previous and random - the conditions are evaluated left to right with an OR semantic.  Except for Random that is evaluated as AND with the context immediately to its left (ALWAYS PUT RANDOM ON THE RIGHTs OF ANOTHER CONTEXT)." FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                </StackPanel>
+                <StackPanel x:Name="Scoring_Panel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Collapsed">
+                    <TextBlock Text="Scoring is only calculated if your swarm successfully completes the board." FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <Image Source="Assets/Rating.png" HorizontalAlignment="Center" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text="The absolute score consists of a combination of two factors:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text=" 1. Number of iterations to complete the board (how many moves?)" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text=" 2. Complexity of the plan (how many steps were used?)" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text="Three stars is possible on every board.  The solution chosen for the top score is not necessarily the best - you can tell how close to the optimal solution your solution gets by tracking the absolute rating.  Go for over 100%!" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text="When playing in Battle mode, you can upload your script and it can be played by others online.  These scripts can be voted on by your peers" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/BattleRating.png" HorizontalAlignment="Center" Width="275" />
+                </StackPanel>
+                <StackPanel x:Name="Battle_Panel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Collapsed">
+                    <TextBlock Text="Battle's objection is domination - control as much of the playing field as you can." FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/Maze.png" Width="125" />
+                        <Grid Width="10"/>
+                        <Image Source="Assets/Open.png" VerticalAlignment="Top" Width="125" />
+                    </StackPanel>
+                    <TextBlock Text="Once any opponent has possession of 50% of the board - it is marked with their color - the game ends and that person wins." FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Assets/Quads.png" Width="125" />
+                        <Grid Width="10"/>
+                        <Image Source="Assets/Hill.png" VerticalAlignment="Top" Width="125" />
+                    </StackPanel>
+                    <TextBlock Text="Scoring is handled in the exact same way as the normal game.  Try to build the leanest and meanest solution possible.  Then login and submit your solution for others to try and vote on.  Be the best!" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <TextBlock Text="Unique just to battle mode - you can control any of the four colors: Blue, Green, Red, or Yellow." FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock/>
+                    <Image Source="Assets/FullBattle.png" Width="275"/>
+                </StackPanel>
+                <StackPanel x:Name="Hint_Panel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Collapsed">
+                    <TextBlock Text="Solution for 1-2:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/solution-1-2.png" Width="275" />
+                    <Grid Height="5"/>
+                    <TextBlock Text="Solution for 1-3:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/solution-1-3.png" Width="275" />
+                    <Grid Height="5"/>
+                    <TextBlock Text="Solution for 1-4:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/solution-1-4.png" Width="275" />
+                    <Grid Height="5"/>
+                    <TextBlock Text="Solution for 1-5:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/solution-1-5.png" Width="275" />
+                    <Grid Height="5"/>
+                    <TextBlock Text="Solution for 1-6:" FontSize="14" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <Image Source="Assets/solution-1-6.png" Width="275" />
+                    <Grid Height="5"/>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

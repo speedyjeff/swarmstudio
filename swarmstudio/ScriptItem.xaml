@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="swarmstudio.ScriptItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:swarmstudio"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="700">
+    
+    <StackPanel x:Name="MainGrid" Orientation="Vertical" Background="White" MouseDown="StackPanel_Tapped">
+        <Grid>
+            <TextBlock x:Name="NameText" Text="The Yellow Lightning" Width="400" FontSize="20" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Image x:Name="RatingImage" Width="300" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid>
+            <TextBlock x:Name="AuthorText" Text="MicrosoftAccount:3468facc00c534caab5d24d22af7ad8f" Width="400" FontSize="10" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Grid Width="300" VerticalAlignment="Center" HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="Assets/thumbsup.png"/>
+                    <TextBlock x:Name="LikeText" Text="4,500" Foreground="Black" FontSize="10" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Image Source="Assets/thumbsdown.png"/>
+                    <TextBlock x:Name="DislikeText" Text="4,500" Foreground="Black" FontSize="10" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</UserControl>
