@@ -25,11 +25,14 @@ namespace swarmstudio
 
         private Move SelectedMove;
 
+        public bool IsPrevious { get; set; }
+
         public MoveSelector()
         {
             this.InitializeComponent();
 
             SelectedMove = Move.Nothing;
+            Loaded += MoveSelector_Loaded;
 
             Unselected = new Dictionary<Image, ImageSource>();
             Selected = new Dictionary<Image, ImageSource>();
@@ -51,6 +54,11 @@ namespace swarmstudio
             Selected.Add(DEFEND_Img, DEFEND_Selected_Img.Source);
             Selected.Add(DUPLICATE_Img, DUPLICATE_Selected_Img.Source);
             Selected.Add(EXPLODE_Img, EXPLODE_Selected_Img.Source);
+        }
+
+        private void MoveSelector_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (IsPrevious) PreviousText.Visibility = Visibility.Visible;
         }
 
         //

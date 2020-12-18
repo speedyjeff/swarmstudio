@@ -5,23 +5,24 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:swarmstudio"
              mc:Ignorable="d" 
-             d:DesignHeight="105" d:DesignWidth="110">
+             d:DesignHeight="165" d:DesignWidth="188">
 
-    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" MouseDown="Grid_Tapped">
+    <StackPanel Width="188" Height="165" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" MouseDown="Grid_Tapped">
         <StackPanel Orientation="Vertical">
-            <Image x:Name="DEFEND_Img" Source="Assets/DEFEND.png" Height="40" MouseDown="Image_Tapped"/>
-            <Image x:Name="LEFT_Img" Source="Assets/LEFT.png" Width="40" MouseDown="Image_Tapped"/>
-            <Image x:Name="DUPLICATE_Img" Source="Assets/DUPLICATE.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="DEFEND_Img" Source="Assets/DEFEND.png" Height="66" MouseDown="Image_Tapped"/>
+            <Image x:Name="LEFT_Img" Source="Assets/LEFT.png" Width="66" MouseDown="Image_Tapped"/>
+            <Image x:Name="DUPLICATE_Img" Source="Assets/DUPLICATE.png" Height="66" MouseDown="Image_Tapped"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image x:Name="UP_Img" Source="Assets/UP.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="UP_Img" Source="Assets/UP.png" Height="66" MouseDown="Image_Tapped"/>
             <Image Height="25"/>
-            <Image x:Name="DOWN_Img" Source="Assets/DOWN.png" Height="40" MouseDown="Image_Tapped"/>
+            <Image x:Name="DOWN_Img" Source="Assets/DOWN.png" Height="66" MouseDown="Image_Tapped"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image x:Name="EXPLODE_Img" Source="Assets/EXPLODE.png" Height="40" MouseDown="Image_Tapped"/>
-            <Image x:Name="RIGHT_Img" Source="Assets/RIGHT.png" Width="40" MouseDown="Image_Tapped"/>
-            <Image />
+            <Image x:Name="EXPLODE_Img" Source="Assets/EXPLODE.png" Height="66" MouseDown="Image_Tapped"/>
+            <Image x:Name="RIGHT_Img" Source="Assets/RIGHT.png" Width="66" MouseDown="Image_Tapped"/>
+            <Image Height="30"/>
+            <TextBlock x:Name="PreviousText" Text="last move" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed"/>
         </StackPanel>
         <Grid Width="8" />
         <Grid Visibility="hidden">

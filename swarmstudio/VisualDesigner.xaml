@@ -25,23 +25,23 @@
             </Grid>
             <Grid x:Name="Grid_0x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x0" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x0" Visibility="Visible" />
+                <local:LogicSelector  x:Name="LS_0x0" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_0x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x1" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x1" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_0x1" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_0x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x2" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x2" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_0x2" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_0x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x3" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_0x3" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_0x3" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_0x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_0x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_0x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_0x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -61,23 +61,23 @@
             </Grid>
             <Grid x:Name="Grid_1x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x0" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x0" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_1x0" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_1x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x1" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x1" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_1x1" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_1x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x2" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x2" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_1x2" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_1x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x3" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x3" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_1x3" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_1x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_1x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_1x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_1x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -97,23 +97,23 @@
             </Grid>
             <Grid x:Name="Grid_2x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x0" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x0" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_2x0" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_2x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x1" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x1" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_2x1" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_2x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x2" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x2" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_2x2" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_2x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x3" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x3" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_2x3" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_2x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_2x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_2x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_2x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -133,23 +133,23 @@
             </Grid>
             <Grid x:Name="Grid_3x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x0" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x0" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_3x0" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_3x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x1" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x1" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_3x1" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_3x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x2" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x2" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_3x2" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_3x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x3" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x3" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_3x3" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_3x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_3x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_3x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_3x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -169,23 +169,23 @@
             </Grid>
             <Grid x:Name="Grid_4x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x0" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x0" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_4x0" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_4x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x1" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x1" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_4x1" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_4x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x2" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x2" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_4x2" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_4x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x3" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x3" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_4x3" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_4x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_4x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_4x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_4x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -205,23 +205,23 @@
             </Grid>
             <Grid x:Name="Grid_5x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x0" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x0" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_5x0" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_5x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x1" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x1" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_5x1" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_5x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x2" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x2" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_5x2" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_5x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x3" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x3" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_5x3" Visibility="Visible" /> 
             </Grid>
             <Grid x:Name="Grid_5x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_5x4" />
-                 <local:LogicSelector Width="125" Height="125" x:Name="LS_5x4" Visibility="Visible" /> 
+                 <local:LogicSelector x:Name="LS_5x4" Visibility="Visible" /> 
             </Grid>
         </StackPanel>
 
@@ -241,23 +241,23 @@
             </Grid>
             <Grid x:Name="Grid_6x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x0" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x0" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_6x0" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_6x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x1" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x1" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_6x1" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_6x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x2" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x2" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_6x2" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_6x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x3" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x3" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_6x3" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_6x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_6x4" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_6x4" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_6x4" Visibility="Visible" />
             </Grid>
         </StackPanel>
 
@@ -277,23 +277,23 @@
             </Grid>
             <Grid x:Name="Grid_7x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x0" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x0" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_7x0" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_7x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x1" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x1" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_7x1" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_7x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x2" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x2" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_7x2" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_7x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x3" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x3" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_7x3" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_7x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_7x4" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_7x4" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_7x4" Visibility="Visible" />
             </Grid>
         </StackPanel>
 
@@ -313,23 +313,23 @@
             </Grid>
             <Grid x:Name="Grid_8x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x0" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x0" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_8x0" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_8x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x1" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x1" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_8x1" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_8x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x2" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x2" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_8x2" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_8x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x3" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x3" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_8x3" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_8x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_8x4" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_8x4" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_8x4" Visibility="Visible" />
             </Grid>
         </StackPanel>
 
@@ -345,23 +345,23 @@
             </Grid>
             <Grid x:Name="Grid_9x0" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x0" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x0" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_9x0" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_9x1" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x1" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x1" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_9x1" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_9x2" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x2" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x2" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_9x2" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_9x3" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped">
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x3" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x3" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_9x3" Visibility="Visible" />
             </Grid>
             <Grid x:Name="Grid_9x4" Width="263" Height="188" Opacity="0.5" MouseDown="Grid_Tapped" >
                 <Rectangle Fill="White" Stroke="Black" StrokeThickness="1" x:Name="Rect_9x4" />
-                <local:LogicSelector Width="125" Height="125" x:Name="LS_9x4" Visibility="Visible" />
+                <local:LogicSelector x:Name="LS_9x4" Visibility="Visible" />
             </Grid>
         </StackPanel>
 
