@@ -52,6 +52,7 @@ namespace swarmstudio
             MyGrid = new GridState[3, 3];
             MyMatrix = new PlotState[5, 5];
             MyRandom = -1;
+            H = W = -1;
             MyColor = PlotColor.Blue;
 
             SelectedType = LogicType.None;

@@ -37,23 +37,31 @@
                     <Button Foreground="Black" Click="Run_Tapped" Height="65">Go</Button>
                     <Button Foreground="Black" Click="Single_Tapped" Height="65">One Step</Button>
                 </StackPanel>
-                <Grid x:Name="DebugPane" Visibility="Collapsed" Background="Transparent" Width="175" Height="385" MouseDown="DebugPane_Pressed" MouseUp="DebugPane_Released" MouseMove="DebugPane_Moved" Margin="861,10,330,348">
+                
+                <!-- debugpane -->
+                <Grid x:Name="DebugPane" Visibility="Collapsed" Background="Transparent" Width="200" Height="500" MouseDown="DebugPane_Pressed" MouseUp="DebugPane_Released" MouseMove="DebugPane_Moved" Margin="861,10,330,348">
                     <Grid.RenderTransform>
-                        <TranslateTransform X="0" Y="0" />
+                        <TranslateTransform X="0" Y="0"/>
                     </Grid.RenderTransform>
-                    <Rectangle Fill="White" Stroke="Red" StrokeThickness="5" RadiusX="5" RadiusY="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RenderTransform>
+                            <ScaleTransform ScaleX="0.65" ScaleY="0.65"/>
+                        </Grid.RenderTransform>
+                        <Rectangle Fill="White" Stroke="Red" StrokeThickness="5" RadiusX="5" RadiusY="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                     <StackPanel Orientation="Vertical">
                         <Button Foreground="Black" Click="Close_Tapped" Height="35">Close</Button>
-                        <local:LogicSelector x:Name="DebugMatrix" Height="125" Width="125" IsHitTestVisible="false"/>
+                        <local:LogicSelector x:Name="DebugMatrix" Height="188" Width="188" IsHitTestVisible="false"/>
                         <Grid Height="10" IsHitTestVisible="false"/>
-                        <local:LogicSelector x:Name="DebugGrid" Height="125" Width="125" IsHitTestVisible="false"/>
+                        <local:LogicSelector x:Name="DebugGrid" Height="188" Width="188" IsHitTestVisible="false"/>
                         <Grid Height="10" IsHitTestVisible="false"/>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" IsHitTestVisible="false">
                             <TextBlock Text="Previous move:" Foreground="Black" FontSize="20" />
                             <TextBlock x:Name="DebugPrevious" Foreground="Black" FontSize="20" Text="Duplication"/>
                         </StackPanel>
                     </StackPanel>
+                    </Grid>
                 </Grid>
+                
                 <Grid x:Name="DonePane" Visibility="Collapsed" Background="#99FFFFFF" Width="1066" Height="768" VerticalAlignment="Top" HorizontalAlignment="Left">
                     <local:Complete x:Name="DoneScreen" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Grid>
@@ -73,6 +81,7 @@
                 </Grid>
                 <local:Tutorial x:Name="TutorialPane" Visibility="Collapsed"/>
             </Grid>
+            <TextBlock x:Name="Title" Text="Battle Maze" Width="110" FontSize="20" HorizontalAlignment="Left" Margin="0,266,10,468"/>
         </Grid>
     </Viewbox>
 </Page>

@@ -121,6 +121,9 @@ namespace swarmstudio
                 if (!VisualDesigner.SetScript(MyScript)) throw new Exception("Failed to set script with RETURN [0]");
             }
 
+            // set title
+            Title.Text = id.ToString().Replace("_", " ");
+
             // move the scroll bars to the right place
             DesignerPane.ScrollToVerticalOffset(0);
             DesignerPane.ScrollToHorizontalOffset(0);
@@ -284,14 +287,14 @@ namespace swarmstudio
         //
         // Callbacks
         //
-        void Execution_OnComplete(int scriptLength, int iterations, double rating, bool success)
+        void Execution_OnComplete(int scriptLength, int optimalScriptLength, int iterations, int optimalIterations, double rating, bool success)
         {
             int stars = Utility.RatingToStars(rating);
 
             System.Diagnostics.Debug.WriteLine("Winner? : " + success + " script length : " + scriptLength + " Iterations : " + iterations + " Rating : " + rating + " Stars : " + stars);
 
             // show the complete screen
-            DoneScreen.Show(success, rating, stars);
+            DoneScreen.Show(success, rating, stars, scriptLength, optimalScriptLength, iterations, optimalIterations);
             DonePane.Visibility = Visibility.Visible;
 
             // record this level details

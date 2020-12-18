@@ -9,17 +9,22 @@
     
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
         <Rectangle VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stroke="Blue" StrokeThickness="5" Fill="White" RadiusX="5" RadiusY="5" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid Width="10" />
+            <TextBlock x:Name="RatingText" Text="100% coding" Foreground="Black" FontSize="10" HorizontalAlignment="Left" TextAlignment="Left"/>
+        </StackPanel>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid Height="10" />
             <local:Stars x:Name="StarPanel" />
             <StackPanel Orientation="Horizontal" Background="White">
+                <Grid Width="15"/>
                 <Button Click="Menu_Tapped">Home</Button>
+                <Grid Width="50"/>
                 <Button Click="Replay_Tapped">Redo</Button>
+                <Grid Width="50"/>
                 <Button x:Name="NextButton" Click="Next_Tapped" Visibility="Visible">Next</Button>
             </StackPanel>
-            <Grid HorizontalAlignment="Right">
-                <TextBlock x:Name="RatingText" Foreground="Black" FontSize="10" Width="50" TextAlignment="Left"/>
-            </Grid>
+
             <Grid x:Name="ScriptUpload" Visibility="Collapsed">
                 <Rectangle Stroke="Black" StrokeThickness="2" RadiusX="5" RadiusY="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
                 <StackPanel Orientation="Horizontal">

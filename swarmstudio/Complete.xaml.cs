@@ -40,7 +40,7 @@ namespace swarmstudio
         // public interface
         //
 
-        public void Show(bool success, double rating, int stars)
+        public void Show(bool success, double rating, int stars, int scriptLength, int optimalScriptLength, int iterations, int optimalIterations)
         {
             if (success) NextButton.Visibility = Visibility.Visible;
             else NextButton.Visibility = Visibility.Collapsed;
@@ -48,8 +48,8 @@ namespace swarmstudio
             // light the right ones
             StarPanel.ShowStars(stars);
 
-            var pct = (double)((int)(rating * 10000.0)) / 100.0;
-            RatingText.Text = (pct > 100 ? 100d : pct) + "%" + (pct > 100 ? "*" : "");
+            rating *= 100d;
+            RatingText.Text = $"Code: {scriptLength}/{optimalScriptLength}{Environment.NewLine}Iterations: {iterations}/{optimalIterations}{Environment.NewLine}{(rating > 100d ? "100%*" : $"{rating:f2}%")}";
 
             // by default do not disply the script submittion
             ScriptUpload.Visibility = Visibility.Collapsed;

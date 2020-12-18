@@ -77,7 +77,7 @@ namespace swarmstudio
         public delegate string GetScriptDelegate();
         public event GetScriptDelegate OnGetScript;
 
-        public delegate void CompleteDelegate(int scriptLength, int iterations, double rating, bool success);
+        public delegate void CompleteDelegate(int scriptLength, int optimalscriptlength, int iterations, int optimaliterations, double rating, bool success);
         public event CompleteDelegate OnComplete;
 
         public delegate void ErrorDelegate(string keyValuePairs);
@@ -307,7 +307,7 @@ namespace swarmstudio
             {
                 int len = ((Level.Script == null) ? 0 : Level.Script.Length);
                 double rating = (((double)Level.ShorestSolution / (double)len) * 0.5) + (((double)Level.LeastInterations / (double)NumIterations) * 0.5);
-                OnComplete(len, NumIterations, success ? rating : 0.0, success);
+                OnComplete(len, Level.ShorestSolution, NumIterations, Level.LeastInterations,  success ? rating : 0.0, success);
             }
         }
 

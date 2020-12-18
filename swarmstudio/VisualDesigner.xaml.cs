@@ -313,6 +313,12 @@ namespace swarmstudio
 
             var logic = (this.FindName("LS_" + h + "x" + w) as LogicSelector);
 
+            if (!logic.IsInit)
+            {
+                logic.Initialize(h, w, MyColor, true /* menu */);
+                logic.OnTypeChanged += LogicSelector_OnTypeChanged;
+            }
+
             return logic;
         }
 
@@ -346,11 +352,6 @@ namespace swarmstudio
 
             // get the logic 
             var logic = GetSelector(h, w);
-            if (!logic.IsInit)
-            {
-                logic.Initialize(h, w, MyColor, true /* menu */);
-                logic.OnTypeChanged += LogicSelector_OnTypeChanged;
-            }
 
             // show chooser
             if (logic.GetLogicType() == LogicType.None) logic.ShowChooser();
@@ -437,11 +438,11 @@ namespace swarmstudio
 
             // move all the logic selectors from 'from' to 'to'
 
+            if (!IsSelectable[from, 0] && !IsSelectable[to, 0]) return;
+
             // check if this is a legal swap
             LogicSelector flogic = GetSelector(from, 0);
             LogicSelector tlogic = GetSelector(to, 0);
-
-            if (flogic.GetLogicType() == LogicType.None && tlogic.GetLogicType() == LogicType.None) return;
 
             // NASTY HACK! temporarily disable TypeChanged callback - or else all these changes will dramatically and negatively impact the swaps
             HACK_TemporarilyDisableTypeChangedCallback = true;
@@ -469,16 +470,12 @@ namespace swarmstudio
                     // if 'from' was selectable then the new 'to' is as well
                     TransferDetails(tempFrom, tlogic);
                     MarkSelectable(to, w);
-
-                    if (tlogic.GetLogicType() == LogicType.Return) MarkReturn(tlogic.H, tlogic.W);
                 }
                 if (toSelectable)
                 {
                     // if 'to' was selectable then the new 'from' is as well
                     TransferDetails(tempTo, flogic);
                     MarkSelectable(from, w);
-
-                    if (flogic.GetLogicType() == LogicType.Return) MarkReturn(flogic.H, flogic.W);
                 }
             }
 
@@ -548,8 +545,6 @@ namespace swarmstudio
                     }
                     break;
                 case LogicType.Delete:
-                    LogicSelector lneighbor;
-
                     // delete this item and all the ones to the right
                     for (int w = logic.W; w < IsSelectable.GetLength(1); w++)
                     {
@@ -561,24 +556,48 @@ namespace swarmstudio
                     {
                         // specail case for the first selector
                         if (logic.H == 0) MarkSelectable(logic.H, logic.W);
-                        else
+                        
+                        // shift up the logic below to this level (all the way to the end)
+                        for(int h=logic.H+1; h<IsSelectable.GetLength(0); h++)
                         {
-                            // do not delete if there is real logic above this one
-                            lneighbor = GetSelector(logic.H - 1, 0);
-                            if (lneighbor.GetLogicType() != LogicType.None && lneighbor.GetLogicType() != LogicType.Return) MarkSelectable(logic.H, logic.W);
-
-                            // do not delete if there is any logic below
-                            if (logic.H + 1 < IsSelectable.GetLength(0))
-                            {
-                                if (IsSelectable[logic.H + 1, 0]) MarkSelectable(logic.H, logic.W);
-                            }
+                            // swap from current to the one below
+                            SwapLogic(h - 1, h);
                         }
                     }
                     else
                     {
                         // do not delete if the neighbor on the left is not blank
-                        lneighbor = GetSelector(logic.H, logic.W - 1);
+                        var lneighbor = GetSelector(logic.H, logic.W - 1);
                         if (lneighbor.GetLogicType() != LogicType.None) MarkSelectable(logic.H, logic.W);
+                    }
+
+                    // clean up the end to ensure there are not multiple in a choose state
+                    for (int h = IsSelectable.GetLength(0) - 1; h >= 1; h--)
+                    {
+                        if (IsSelectable[h - 1, 0])
+                        {
+                            var current = GetSelector(h, 0);
+                            if (current.GetLogicType() == LogicType.None)
+                            {
+                                var previous = GetSelector(h - 1, 0);
+                                // check if an additional chooser should be after the previous one
+                                if (previous.GetLogicType() == LogicType.None || previous.GetLogicType() == LogicType.Return)
+                                {
+                                    // remove the current row
+                                    UnmarkSelectable(current.H, 0);
+                                }
+                                else
+                                {
+                                    // ensure this one is a chooser
+                                    MarkSelectable(current.H, 0);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // previous is not selectable
+                            if (IsSelectable[h, 0]) UnmarkSelectable(h, 0);
+                        }
                     }
 
                     break;
