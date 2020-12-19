@@ -577,8 +577,8 @@ namespace Swarm
                     level.AI = new SwarmDetails[0];
 
                     // ratings
-                    level.ShorestSolution = 353;
-                    level.LeastInterations = 50;
+                    level.ShorestSolution = 470;
+                    level.LeastInterations = 18;
 
                     return level;
         }
@@ -1053,7 +1053,7 @@ namespace Swarm
             int cnt;
 
             // field
-                    level.Field = GetField(15, 0, new byte[,] {
+            level.Field = GetField(15, 0, new byte[,] {
                             {1,1,1,1,1,1,1,1,1,1,1,1}, // 15
                             {1,1,1,1,1,1,1,1,1,1,1,1}, // 16
                             {1,1,1,1,1,1,1,1,1,1,1,1}, // 17
@@ -1067,39 +1067,43 @@ namespace Swarm
 							{1,1,1,1,1,1,1,1,1,1,1,1}  // 25
                     });
 
-                    // Start
-                    level.Start = new Tuple<int, int>[1] { new Tuple<int, int>(15, 0) };
+            // Start
+            level.Start = new Tuple<int, int>[1] { new Tuple<int, int>(15, 0) };
 
-                    // End
-                    level.End = new Tuple<int, int>[1] { new Tuple<int, int>(25, 11) };
+            // End
+            level.End = new Tuple<int, int>[1] { new Tuple<int, int>(25, 11) };
 
-                    // Scale
-                    level.Scale = 3.0;
+            // Scale
+            level.Scale = 3.0;
 
-                    // Center
-                    level.Center = new Tuple<double, double>(-140, 210);
+            // Center
+            level.Center = new Tuple<double, double>(-140, 210);
 
-                    // AI
-                    level.AI = new SwarmDetails[1];
+            // AI
+            level.AI = new SwarmDetails[1];
 
-                    // RED
-                    starting = new Tuple<int, int>[129];
-                    cnt = 0;
-                    for (int h = 15; h <= 25; h++)
-                        for (int w = 0; w <= 11; w++)
-                        {
-                            if (h == 15 && (w == 0 || w == 1 || w == 2)) { } // skip
-                            else starting[cnt++] = new Tuple<int, int>(h, w);
-                        }
-                    level.AI[0] = new SwarmDetails(PlotColor.Red,
-                        @"RETURN [5]",
-                        starting
-                        );
+            // RED
+            starting = new Tuple<int, int>[128];
+            cnt = 0;
+            for (int h = 15; h <= 25; h++)
+            {
+                for (int w = 0; w <= 11; w++)
+                {
+                    if ((h == 15 && (w == 0 || w == 1 || w == 2))
+                        ||
+                        (h == 25 && w == 11)) { } // skip
+                    else starting[cnt++] = new Tuple<int, int>(h, w);
+                }
+            }
+            level.AI[0] = new SwarmDetails(PlotColor.Red,
+                @"RETURN [5]",
+                starting
+                );
 
-                    // ratings
-                    level.ShorestSolution = 269;
-                    level.LeastInterations = 111;
-                    
+            // ratings
+            level.ShorestSolution = 269;
+            level.LeastInterations = 111;
+
             return level;
         }
 
@@ -1161,7 +1165,7 @@ namespace Swarm
                         );
 
                     // ratings
-                    level.ShorestSolution = 418;
+                    level.ShorestSolution = 359;
                     level.LeastInterations = 40;
                     
             return level;
@@ -1436,7 +1440,7 @@ namespace Swarm
 
                     // ratings
                     level.ShorestSolution = 160;
-                    level.LeastInterations = 28;
+                    level.LeastInterations = 49;
                     
             return level;
         }
@@ -2814,7 +2818,7 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 122;
+            level.ShorestSolution = 86;
             level.LeastInterations = 22;
 
             return level;

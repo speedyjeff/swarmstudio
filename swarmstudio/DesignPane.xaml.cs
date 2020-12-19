@@ -472,6 +472,7 @@ namespace swarmstudio
                 ExecutionPane.Visibility = Visibility.Visible;
                 DesignerPane.Visibility = Visibility.Visible;
                 Menu.Visibility = Visibility.Visible;
+                Title.Visibility = Visibility.Visible;
             }
             // going up
             else if (VerResizeUp)
@@ -480,6 +481,7 @@ namespace swarmstudio
                 ExecutionPane.Visibility = Visibility.Collapsed;
                 Menu.Visibility = Visibility.Collapsed;
                 VerResizeUp = false;
+                Title.Visibility = Visibility.Collapsed;
             }
             // going down
             else
@@ -488,6 +490,7 @@ namespace swarmstudio
                 DesignerPane.Visibility = Visibility.Collapsed;
                 Menu.Visibility = Visibility.Visible;
                 VerResizeUp = true;
+                Title.Visibility = Visibility.Visible;
             }
         }
 
