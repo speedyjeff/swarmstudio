@@ -1281,8 +1281,8 @@ namespace Swarm
                         );
 
                     // ratings
-                    level.ShorestSolution = 86;
-                    level.LeastInterations = 54;
+                    level.ShorestSolution = 160;
+                    level.LeastInterations = 28;
                     
             return level;
         }
@@ -1341,7 +1341,7 @@ namespace Swarm
                         );
 
                     // ratings
-                    level.ShorestSolution = 432;
+                    level.ShorestSolution = 319;
                     level.LeastInterations = 14;
                     
             return level;
@@ -1706,8 +1706,8 @@ namespace Swarm
                         );
 
                     // ratings
-                    level.ShorestSolution = 500;
-                    level.LeastInterations = 100;
+                    level.ShorestSolution = 451;
+                    level.LeastInterations = 43;
 
                     return level;
         }
@@ -1747,7 +1747,7 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 342;
+            level.ShorestSolution = 306;
             level.LeastInterations = 64;
 
             return level;
@@ -2857,8 +2857,8 @@ namespace Swarm
             level.Center = new Tuple<double, double>(-75, 210);
 
             // ratings
-            level.ShorestSolution = 379;
-            level.LeastInterations = 58;
+            level.ShorestSolution = 431;
+            level.LeastInterations = 38;
 
             return level;
         }
@@ -3016,8 +3016,8 @@ namespace Swarm
                 );
 
             // ratings
-            level.ShorestSolution = 344;
-            level.LeastInterations = 45;
+            level.ShorestSolution = 666;
+            level.LeastInterations = 24;
 
             return level;
         }
@@ -3352,7 +3352,7 @@ namespace Swarm
                             {1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1}, // 20
 							{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0}, // 21
 							{0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0}, // 22
-							{0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0}, // 23
+							{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0}, // 23
 							{1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1}, // 24
                             //                                               24
                     });
@@ -3409,8 +3409,8 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 490;
-            level.LeastInterations = 53;
+            level.ShorestSolution = 452;
+            level.LeastInterations = 57;
 
             return level;
         }

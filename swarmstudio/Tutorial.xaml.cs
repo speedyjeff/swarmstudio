@@ -122,7 +122,7 @@ namespace swarmstudio
                 case TutorialState.Step_1:
                     NextButton.IsEnabled = true;
                     FingerImage.Visibility = Visibility.Collapsed;
-                    TutorialText.Text = "The objective of SWARM is to create an algorithm (below) to maneuver your BLUE dots (your SWARM) to SAFETY (the purble dot).  (some puzzles will have a SWARM of team members)";
+                    TutorialText.Text = "The objective of SWARM is to create an algorithm (below) to maneuver your BLUE dots (your SWARM) to SAFETY (the purble dot).  Use <ctrl>+MouseWheel to Zoom in/out.  (some puzzles will have a SWARM of team members)";
                     break;
                 case TutorialState.Step_2:
                     FingerImage.Visibility = Visibility.Visible;

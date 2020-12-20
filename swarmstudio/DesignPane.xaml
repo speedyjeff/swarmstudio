@@ -14,14 +14,22 @@
                 <StackPanel Orientation="Vertical">
                     <ScrollViewer x:Name="ExecutionPane" Width="1041" Height="384" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
 
-                        <local:Surface x:Name="Execution" Width="1500" Height="1500" Visibility="Visible" HorizontalAlignment="Left"/>
+                        <local:Surface x:Name="Execution" Width="1500" Height="1500" Visibility="Visible" HorizontalAlignment="Left" MouseWheel="Execution_MouseWheel">
+                            <local:Surface.RenderTransform>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            </local:Surface.RenderTransform>
+                        </local:Surface>
 
                     </ScrollViewer>
                     <Grid x:Name="VerResizeBar" Background="Black" Width="1066" Height="25" HorizontalAlignment="Left">
                         <Rectangle Fill="White" Height="22" Width="80" MouseDown="Ver_Resize_Tapped"/>
                     </Grid>
                     <ScrollViewer x:Name="DesignerPane" Width="1366" Height="384" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" MouseMove="DesignerPane_PointerMoved" MouseDown="DesignerPane_PointerPressed">
-                        <local:VisualDesigner x:Name="VisualDesigner" Width="1380" Height="1920" Visibility="Visible" HorizontalAlignment="Left" />
+                        <local:VisualDesigner x:Name="VisualDesigner" Width="1380" Height="1920" Visibility="Visible" HorizontalAlignment="Left" MouseWheel="VisualDesigner_MouseWheel">
+                            <local:VisualDesigner.RenderTransform>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            </local:VisualDesigner.RenderTransform>
+                        </local:VisualDesigner>
                     </ScrollViewer>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">

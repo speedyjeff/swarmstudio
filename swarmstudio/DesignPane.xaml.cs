@@ -30,6 +30,10 @@ namespace swarmstudio
         private bool IsSingleStep;
         private bool IsBattle;
 
+        private float DesignerScaleFactor = 1.0f;
+        private float SurfaceScaleFactor = 1.0f;
+        private const float ScaleIncrement = 0.1f;
+
         private bool VerResizeUp;
 
         public static DesignPane CachedDesignPane;
@@ -543,5 +547,44 @@ namespace swarmstudio
             DebugPaneIsPressed = false;
         }
 
+        private void VisualDesigner_MouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            if (Keyboard.IsKeyDown(Key.RightCtrl) || Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                // zoom in/out
+                if (e.Delta < 0) DesignerScaleFactor -= ScaleIncrement;
+                else DesignerScaleFactor += ScaleIncrement;
+
+                // ensure it does not exceed normal range
+                if (DesignerScaleFactor > 1f) DesignerScaleFactor = 1f;
+                else if (DesignerScaleFactor < ScaleIncrement) DesignerScaleFactor = ScaleIncrement;
+
+                // zoom the control in and out
+                var scale = VisualDesigner.RenderTransform as ScaleTransform;
+                scale.ScaleX = DesignerScaleFactor;
+                scale.ScaleY = DesignerScaleFactor;
+                e.Handled = true;
+            }
+        }
+
+        private void Execution_MouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            if (Keyboard.IsKeyDown(Key.RightCtrl) || Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                // zoom in/out
+                if (e.Delta < 0) SurfaceScaleFactor -= ScaleIncrement;
+                else SurfaceScaleFactor += ScaleIncrement;
+
+                // ensure it does not exceed normal range
+                if (SurfaceScaleFactor > 1f) SurfaceScaleFactor = 1f;
+                else if (SurfaceScaleFactor < ScaleIncrement) SurfaceScaleFactor = ScaleIncrement;
+
+                // zoom the control in and out
+                var scale = Execution.RenderTransform as ScaleTransform;
+                scale.ScaleX = SurfaceScaleFactor;
+                scale.ScaleY = SurfaceScaleFactor;
+                e.Handled = true;
+            }
+        }
     }
 }

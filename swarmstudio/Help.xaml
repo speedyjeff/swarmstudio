@@ -19,7 +19,7 @@
                 <StackPanel x:Name="GamePlay_Panel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Vertical" Visibility="Visible">
                     <TextBlock Text="The goal is to get your swarm safely from the Start to Finish (if you get stuck try Hints)" FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
                     <Image Source="Assets/StartNFinish.png" HorizontalAlignment="Center" Width="250"/>
-                    <TextBlock Text="Build a plan to move your swarm by using move instructions - at times these moves must be done conditionally based on context.  The context consists a narrow or wide view (from the swarms point of view), previous move or random." FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
+                    <TextBlock Text="Build a plan to move your swarm by using move instructions - at times these moves must be done conditionally based on context.  Use &lt;ctrl&gt;+MouseWheel to zoom in and out.  The context consists a narrow or wide view (from the swarms point of view), previous move or random." FontSize="12" Foreground="Black" TextWrapping="Wrap" Width="275"/>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="Assets/MoveSelection.png" Width="125" VerticalAlignment="Center"/>
                         <Image Source="Assets/Selection.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="130"/>
