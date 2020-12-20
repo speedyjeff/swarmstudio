@@ -174,3 +174,83 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 
 ![solution 2-5](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-5.png)
 </details>
+
+# World 3-1
+![world 3-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-1.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-1.png)
+</details>
+
+# World 3-2
+![world 3-2](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-2.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-2](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-2.png)
+</details>
+
+# World 3-3
+![world 3-3](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-3.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-3](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-3.png)
+</details>
+
+# World 3-4
+![world 3-4](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-4.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-4](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-4.png)
+</details>
+
+# World 3-5
+![world 3-5](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-5.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-5](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-5.png)
+</details>
+
+# World 3-6
+![world 3-6](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-6.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-6](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-6.png)
+</details>
+
+# World 3-7
+![world 3-7](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-7.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-7](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-7.png)
+</details>
+
+# World 3-8
+![world 3-8](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-8.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-8](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-8.png)
+</details>
+
+# World 3-9
+![world 3-9](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-9.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-9](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-9.png)
+</details>
+
+# Bonus 1
+![world bonus 1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-bonus-1.png)
+<details>
+<summary>Solution</summary>
+
+![solution bonus 1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-bonus-1.png)
+</details>
