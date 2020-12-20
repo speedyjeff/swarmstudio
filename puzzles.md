@@ -9,9 +9,7 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 ![world 1-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-1-1.png)
 <details>
 <summary>Solution</summary>
-```
 ![solution 1-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-1-1.png)
-```
 </details>
 
 # World 1-2
