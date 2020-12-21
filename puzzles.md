@@ -175,6 +175,54 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 ![solution 2-5](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-5.png)
 </details>
 
+# World 2-6
+![world 2-6](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-6.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-6](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-6.png)
+</details>
+
+# World 2-7
+![world 2-7](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-7.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-7](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-7.png)
+</details>
+
+# World 2-8
+![world 2-8](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-8.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-8](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-8.png)
+</details>
+
+# World 2-9
+![world 2-9](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-9.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-9](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-9.png)
+</details>
+
+# World 2-10
+![world 2-10](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-10.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-10](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-1.png)
+</details>
+
+# World 2-11
+![world 2-11](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-11.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-11](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-11.png)
+</details>
+
 # World 3-1
 ![world 3-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-1.png)
 <details>

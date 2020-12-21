@@ -850,7 +850,7 @@ namespace Swarm
 
                     // ratings
                     level.ShorestSolution = 342;
-                    level.LeastInterations = 45;
+                    level.LeastInterations = 89;
                     
             return level;
         }
@@ -1556,8 +1556,8 @@ namespace Swarm
                     level.AI = new SwarmDetails[0];
 
                     // ratings
-                    level.ShorestSolution = 248;
-                    level.LeastInterations = 11;
+                    level.ShorestSolution = 176;
+                    level.LeastInterations = 12;
                     
             return level;
         }
@@ -1811,8 +1811,8 @@ namespace Swarm
                 );
 
             // ratings
-            level.ShorestSolution = 234;
-            level.LeastInterations = 21;
+            level.ShorestSolution = 249;
+            level.LeastInterations = 26;
 
             return level;
         }
@@ -3051,8 +3051,8 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 234;
-            level.LeastInterations = 34;
+            level.ShorestSolution = 86;
+            level.LeastInterations = 41;
 
             return level;
         }
@@ -3183,8 +3183,8 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 232;
-            level.LeastInterations = 131;
+            level.ShorestSolution = 449;
+            level.LeastInterations = 51;
 
             return level;
         }
