@@ -1876,7 +1876,7 @@ namespace Swarm
 
             // ratings
             level.ShorestSolution = 342;
-            level.LeastInterations = 69;
+            level.LeastInterations = 109;
 
             return level;
         }
@@ -1945,8 +1945,8 @@ namespace Swarm
                 );
 
             // ratings
-            level.ShorestSolution = 380;
-            level.LeastInterations = 31;
+            level.ShorestSolution = 305;
+            level.LeastInterations = 61;
 
             return level;
         }
@@ -3128,7 +3128,7 @@ namespace Swarm
                 );
 
             // ratings
-            level.ShorestSolution = 160;
+            level.ShorestSolution = 195;
             level.LeastInterations = 23;
 
             return level;
