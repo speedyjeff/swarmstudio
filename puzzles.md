@@ -223,6 +223,46 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 ![solution 2-11](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-11.png)
 </details>
 
+# World 2-12
+![world 2-12](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-12.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-12](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-12.png)
+</details>
+
+# World 2-13
+![world 2-13](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-13.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-13](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-13.png)
+</details>
+
+# World 2-14
+![world 2-14](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-14.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-14](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-14.png)
+</details>
+
+# World 2-15
+![world 2-15](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-15.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-15](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-15.png)
+</details>
+
+# World 2-16
+![world 2-16](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-2-16.png)
+<details>
+<summary>Solution</summary>
+
+![solution 2-16](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-2-16.png)
+</details>
+
 # World 3-1
 ![world 3-1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-1.png)
 <details>
@@ -341,6 +381,14 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 <summary>Solution</summary>
 
 ![solution 3-15](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-15.png)
+</details>
+
+# World 3-16
+![world 3-16](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-3-16.png)
+<details>
+<summary>Solution</summary>
+
+![solution 3-16](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-3-16.png)
 </details>
 
 # Bonus 1

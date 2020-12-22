@@ -586,5 +586,25 @@ namespace swarmstudio
                 e.Handled = true;
             }
         }
+
+        private void MainGrid_KeyDown(object sender, KeyEventArgs e)
+        {
+            // enable cut and paste in the execution area
+            if (Keyboard.IsKeyDown(Key.RightCtrl) || Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                if (string.Equals(e.Key.ToString(), "c", StringComparison.OrdinalIgnoreCase))
+                {
+                    // copy
+                    var script = VisualDesigner.GetScript();
+                    Clipboard.SetText(script);
+                }
+                else if (string.Equals(e.Key.ToString(), "v", StringComparison.OrdinalIgnoreCase))
+                {
+                    // paste
+                    var script = Clipboard.GetText();
+                    VisualDesigner.SetScript(script);
+                }
+            }
+        }
     }
 }

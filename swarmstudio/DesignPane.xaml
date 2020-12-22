@@ -9,7 +9,7 @@
       Title="DesignPane">
 
     <Viewbox>
-        <Grid Width="1366" Height="768" x:Name="MainGrid">
+        <Grid Width="1366" Height="768" x:Name="MainGrid" KeyDown="MainGrid_KeyDown">
             <Grid Background="White">
                 <StackPanel Orientation="Vertical">
                     <ScrollViewer x:Name="ExecutionPane" Width="1041" Height="384" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
