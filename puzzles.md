@@ -399,3 +399,10 @@ The goal of each puzzle is to maneuver the blue swarm from the start to the end.
 ![solution bonus 1](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-bonus-1.png)
 </details>
 
+# Bonus 2
+![world bonus 2](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/world-bonus-2.png)
+<details>
+<summary>Solution</summary>
+
+![solution bonus 2](https://github.com/speedyjeff/swarmstudio/blob/master/swarmstudio/Assets/solution-bonus-2.png)
+</details>

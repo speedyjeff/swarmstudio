@@ -3449,8 +3449,8 @@ namespace Swarm
             level.AI = new SwarmDetails[0];
 
             // ratings
-            level.ShorestSolution = 342;
-            level.LeastInterations = 96;
+            level.ShorestSolution = 416;
+            level.LeastInterations = 20;
 
             return level;
         }
